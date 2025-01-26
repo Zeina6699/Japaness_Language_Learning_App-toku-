@@ -11,9 +11,9 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return  Scaffold(
-        backgroundColor: Color(0xffFEF6DB),
+        backgroundColor:const Color(0xffFEF6DB),
     appBar: AppBar(
-  backgroundColor: Color(0xff46322B),
+  backgroundColor:const Color(0xff46322B),
   title: CustomText(text: 'Toku',color: Colors.white,fontSize: 18,)
 ),
 body:Column(

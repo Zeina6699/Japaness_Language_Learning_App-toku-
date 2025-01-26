@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       routes:{
         '/home':(context)=>const HomeScreen(),
-        '/numbers':(context)=>const NumbersScreen(),
+        '/numbers':(context)=>NumbersScreen(),
 
       },
     initialRoute:'/home');}}
