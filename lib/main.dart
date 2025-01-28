@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:toku/Screens/Family_Members_Screen.dart';
 import 'package:toku/Screens/Home_Screen.dart';
 import 'package:toku/Screens/Numbers_Screen.dart';
 
@@ -17,6 +18,6 @@ class MyApp extends StatelessWidget {
       routes:{
         '/home':(context)=>const HomeScreen(),
         '/numbers':(context)=>NumbersScreen(),
-
+        '/family':(context)=>FamilyMembersScreen()
       },
     initialRoute:'/home');}}
