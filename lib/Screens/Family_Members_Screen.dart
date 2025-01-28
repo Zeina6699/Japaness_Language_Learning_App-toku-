@@ -6,7 +6,7 @@ import 'package:toku/Widgets/Custom_Family_Members_Container.dart';
 class FamilyMembersScreen extends StatelessWidget {
   FamilyMembersScreen({super.key});
 
-  List<FamilyModel> familyModelList=[
+  List<FamilyModel> familyList=[
     FamilyModel(image:'assets/images/family_members/family_grandfather.png', title1:'Ojisan', title2: 'GrandFather',sound:'grand father.wav' ),
     FamilyModel(image:'assets/images/family_members/family_grandmother.png', title1:'Sobo', title2: 'GrandMother',sound: 'grand mother.wav'),
     FamilyModel(image: 'assets/images/family_members/family_father.png', title1:'Chichioya', title2:'Father',sound: 'father.wav'),
@@ -28,9 +28,9 @@ class FamilyMembersScreen extends StatelessWidget {
         title: CustomText(text: 'Family Members',color: Colors.white,fontSize:20),
       ),
       body:ListView.builder(
-        itemCount:familyModelList.length ,
+        itemCount:familyList.length ,
         itemBuilder: (context,index){
-     return CustomFamilyMembersContainer(familyModel:familyModelList[index] );
+     return CustomFamilyMembersContainer(familyModel:familyList[index] );
       //CustomFamilyMembersContainer(context),
    } ));
   }

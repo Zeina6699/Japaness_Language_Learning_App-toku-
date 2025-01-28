@@ -5,7 +5,7 @@ import 'package:toku/Widgets/Custom_Text.dart';
 
 class NumbersScreen extends StatelessWidget {
 NumbersScreen({super.key});
-   final List<NumberModel> numbers = [
+   final List<NumberModel> numbersList = [
     NumberModel(image: 'assets/images/numbers/number_one.png', text1: 'Ichi', text2: 'one',sound: 'number_one_sound.mp3' ),
     NumberModel(image: 'assets/images/numbers/number_two.png', text1: 'Ni', text2: 'two',sound: 'number_two_sound.mp3'),
     NumberModel(image: 'assets/images/numbers/number_three.png', text1: 'San', text2: 'three',sound: 'number_three_sound.mp3'),
@@ -27,10 +27,10 @@ NumbersScreen({super.key});
       backgroundColor:const Color(0xff46322B),
      ) ,
      body:ListView.builder(
-      itemCount: numbers.length,
+      itemCount: numbersList.length,
       itemBuilder: (context,index){
       return    CustomNumbersContainer(
-        numberModel:numbers[index]
+        numberModel:numbersList[index]
       
           );})
      );
