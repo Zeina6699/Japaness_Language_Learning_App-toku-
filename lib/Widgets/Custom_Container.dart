@@ -1,5 +1,4 @@
 
-import 'dart:ui';
 
 import 'package:flutter/material.dart';
 import 'package:toku/Widgets/Custom_Text.dart';
@@ -20,7 +19,7 @@ final VoidCallback? onTap;
     return GestureDetector(
       onTap: onTap,
       child: Container(
-        padding: EdgeInsets.only(left: 20),
+        padding: const EdgeInsets.only(left: 20),
         alignment: Alignment.centerLeft,
         height: 70, width:double.infinity, color:color, child: CustomText(text:text,color: Colors.white,fontSize:18)),
     );

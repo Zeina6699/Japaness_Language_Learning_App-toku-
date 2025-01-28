@@ -1,4 +1,3 @@
-import 'dart:ui';
 
 import 'package:flutter/material.dart';
 import 'package:toku/Widgets/Custom_Container.dart';
@@ -18,10 +17,10 @@ class HomeScreen extends StatelessWidget {
 ),
 body:Column(
   children: [
-    CustomContainer(color:Color(0xffEF9235),onTap:(){Navigator.pushNamed(context,'/numbers');} ,text:'Numbers' ),
-    CustomContainer(color: Color.fromARGB(255, 111, 185, 58), text:'Family Numbers'),
-    CustomContainer(color: Color(0xff7D40A2), text: 'Colors'),
-    CustomContainer(color:Color(0xff51B0D5), text:"Phrases")
+    CustomContainer(color:const Color(0xffEF9235),onTap:(){Navigator.pushNamed(context,'/numbers');} ,text:'Numbers' ),
+    const CustomContainer(color: Color.fromARGB(255, 111, 185, 58), text:'Family Numbers'),
+    const CustomContainer(color: Color(0xff7D40A2), text: 'Colors'),
+    const CustomContainer(color:Color(0xff51B0D5), text:"Phrases")
 
   ],
 ),

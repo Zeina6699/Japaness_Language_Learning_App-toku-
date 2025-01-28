@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:toku/Screens/Home_Screen.dart';
 import 'package:toku/Screens/Numbers_Screen.dart';
-import 'package:toku/Widgets/Custom_Container.dart';
-import 'package:toku/Widgets/Custom_Text.dart';
 
 void main() {
   runApp(const MyApp());
