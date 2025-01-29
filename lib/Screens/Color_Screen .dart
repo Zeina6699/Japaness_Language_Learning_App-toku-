@@ -1,20 +1,20 @@
 import 'package:flutter/material.dart';
-import 'package:toku/Models/Color_Model.dart';
-import 'package:toku/Widgets/Custom_Color_Container.dart';
+import 'package:toku/Models/Item_Model.dart';
+import 'package:toku/Widgets/Custom_Item_Container.dart';
 import 'package:toku/Widgets/Custom_Text.dart';
 import 'package:audioplayers/audioplayers.dart';
 
 class ColorScreen  extends StatelessWidget {
  ColorScreen ({super.key});
-  final List<ColorModel>colorList=[
-  ColorModel(image: 'assets/images/colors/color_black.png', title1: 'Burakku', title2: 'Black', sound:'black.wav'),
-  ColorModel(image: 'assets/images/colors/color_brown.png', title1: 'Chairo', title2: 'Brown', sound:'brown.wav'),
-  ColorModel(image: 'assets/images/colors/color_red.png', title1: 'Aka', title2: 'Red', sound:'red.wav'),
-  ColorModel(image: 'assets/images/colors/color_green.png', title1: 'Midori', title2: 'Green', sound:'green.wav'),
-  ColorModel(image: 'assets/images/colors/yellow.png', title1: 'Ki', title2: 'Yellow', sound:'yellow.wav'),
-  ColorModel(image: 'assets/images/colors/color_white.png', title1: 'Shiro', title2: 'White', sound:'white.wav'),
-  ColorModel(image: 'assets/images/colors/color_dusty_yellow.png', title1: 'Dasutī Ierō', title2: 'Dusty Yellow', sound:'dusty yellow.wav'),
-  ColorModel(image: 'assets/images/colors/color_gray.png', title1: 'Gurē', title2: 'Gray', sound:'gray.wav'),
+  final List<ItemModel>colorList=[
+  ItemModel(image: 'assets/images/colors/color_black.png', jpText: 'Burakku', enText: 'Black', sound:'black.wav'),
+  ItemModel(image: 'assets/images/colors/color_brown.png',jpText: 'Chairo', enText: 'Brown', sound:'brown.wav'),
+  ItemModel(image: 'assets/images/colors/color_red.png', jpText: 'Aka', enText: 'Red', sound:'red.wav'),
+  ItemModel(image: 'assets/images/colors/color_green.png', jpText: 'Midori', enText: 'Green', sound:'green.wav'),
+  ItemModel(image: 'assets/images/colors/yellow.png', jpText: 'Ki',enText: 'Yellow', sound:'yellow.wav'),
+  ItemModel(image: 'assets/images/colors/color_white.png', jpText: 'Shiro', enText: 'White', sound:'white.wav'),
+  ItemModel(image: 'assets/images/colors/color_dusty_yellow.png',jpText: 'Dasutī Ierō',enText: 'Dusty Yellow', sound:'dusty yellow.wav'),
+ ItemModel(image: 'assets/images/colors/color_gray.png',jpText: 'Gurē', enText: 'Gray', sound:'gray.wav'),
 
 
   ];
@@ -31,7 +31,9 @@ class ColorScreen  extends StatelessWidget {
         itemCount: colorList.length,
         itemBuilder: (context,index){
           
-          return CustomColorContainer(colorModel: colorList[index],);
+          return CustomItemContainer(itemModel: colorList[index],color:Color(0xff7D40A2),
+          string: 'colors');
+          
         }),
     );
   }

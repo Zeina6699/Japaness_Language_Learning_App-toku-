@@ -1,22 +1,22 @@
 import 'package:flutter/material.dart';
-import 'package:toku/Models/Family_Model.dart';
+import 'package:toku/Models/Item_Model.dart';
+import 'package:toku/Widgets/Custom_Item_Container.dart';
 import 'package:toku/Widgets/Custom_Text.dart';
-import 'package:toku/Widgets/Custom_Family_Members_Container.dart';
 
 class FamilyMembersScreen extends StatelessWidget {
   FamilyMembersScreen({super.key});
 
-  List<FamilyModel> familyList=[
-    FamilyModel(image:'assets/images/family_members/family_grandfather.png', title1:'Ojisan', title2: 'GrandFather',sound:'grand father.wav' ),
-    FamilyModel(image:'assets/images/family_members/family_grandmother.png', title1:'Sobo', title2: 'GrandMother',sound: 'grand mother.wav'),
-    FamilyModel(image: 'assets/images/family_members/family_father.png', title1:'Chichioya', title2:'Father',sound: 'father.wav'),
-    FamilyModel(image:'assets/images/family_members/family_mother.png', title1:'Hahaoya', title2: 'Mother',sound: 'mother.wav'),
-    FamilyModel(image:'assets/images/family_members/family_son.png', title1:'Musuko', title2: 'Son',sound: 'son.wav'),
-    FamilyModel(image:'assets/images/family_members/family_daughter.png', title1:'Musume', title2: 'Daughter',sound:'daughter.wav') ,
-    FamilyModel(image: 'assets/images/family_members/family_older_brother.png', title1: 'Nisan', title2: 'Older Brother',sound: 'older brother.wav'),
-    FamilyModel(image: 'assets/images/family_members/family_older_sister.png', title1: 'Ane', title2: 'Older Sister',sound: 'older sister.wav'),
-    FamilyModel(image: 'assets/images/family_members/family_younger_brother.png', title1: 'Ototo', title2: 'Younger Brother',sound: 'younger brother.wav'),
-    FamilyModel(image: 'assets/images/family_members/family_younger_sister.png', title1: 'Imoto', title2: 'Younger Sister',sound: 'younger sister.wav'),
+  List<ItemModel> familyList=[
+    ItemModel(image:'assets/images/family_members/family_grandfather.png', jpText:'Ojisan', enText: 'GrandFather',sound:'grand father.wav' ),
+    ItemModel(image:'assets/images/family_members/family_grandmother.png', jpText:'Sobo', enText: 'GrandMother',sound: 'grand mother.wav'),
+    ItemModel(image: 'assets/images/family_members/family_father.png', jpText:'Chichioya',  enText:'Father',sound: 'father.wav'),
+    ItemModel(image:'assets/images/family_members/family_mother.png',jpText:'Hahaoya', enText: 'Mother',sound: 'mother.wav'),
+    ItemModel(image:'assets/images/family_members/family_son.png', jpText:'Musuko',  enText: 'Son',sound: 'son.wav'),
+    ItemModel(image:'assets/images/family_members/family_daughter.png', jpText:'Musume', enText: 'Daughter',sound:'daughter.wav') ,
+    ItemModel(image: 'assets/images/family_members/family_older_brother.png',jpText: 'Nisan', enText: 'Older Brother',sound: 'older brother.wav'),
+    ItemModel(image: 'assets/images/family_members/family_older_sister.png', jpText: 'Ane',  enText: 'Older Sister',sound: 'older sister.wav'),
+    ItemModel(image: 'assets/images/family_members/family_younger_brother.png', jpText: 'Ototo',  enText: 'Younger Brother',sound: 'younger brother.wav'),
+    ItemModel(image: 'assets/images/family_members/family_younger_sister.png', jpText: 'Imoto',  enText: 'Younger Sister',sound: 'younger sister.wav'),
   ];
 
   @override
@@ -30,7 +30,7 @@ class FamilyMembersScreen extends StatelessWidget {
       body:ListView.builder(
         itemCount:familyList.length ,
         itemBuilder: (context,index){
-     return CustomFamilyMembersContainer(familyModel:familyList[index] );
+     return CustomItemContainer(itemModel:familyList[index],color:Color(0xff527D31) ,string:'family_members' , );
       //CustomFamilyMembersContainer(context),
    } ));
   }

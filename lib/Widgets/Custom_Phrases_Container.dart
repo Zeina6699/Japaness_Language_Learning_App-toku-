@@ -1,6 +1,7 @@
 import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/material.dart';
-import 'package:toku/Models/Phrases_Model.dart';
+import 'package:toku/Models/Item_Model.dart';
+
 import 'package:toku/Widgets/Custom_Text.dart';
 
 class CustomPhrasesContainer extends StatefulWidget {
@@ -10,7 +11,7 @@ class CustomPhrasesContainer extends StatefulWidget {
     super.key,
   });
   final int? index;
-  final PhrasesModel phrasesModel;
+  final ItemModel phrasesModel;
 
   @override
   State<CustomPhrasesContainer> createState() => _CustomPhrasesContainerState();
@@ -32,8 +33,8 @@ class _CustomPhrasesContainerState extends State<CustomPhrasesContainer> {
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.start,
                children: [
-                 CustomText(text:widget.phrasesModel.text1,color: Colors.white, fontSize: 17,maxLines: 1,  overflow: TextOverflow.ellipsis,),
-                 CustomText(text: widget.phrasesModel.text2,color: Colors.white, fontSize: 17,maxLines: 1, overflow: TextOverflow.ellipsis,)
+                 CustomText(text:widget.phrasesModel.jpText,color: Colors.white, fontSize: 17,maxLines: 1,  overflow: TextOverflow.ellipsis,),
+                 CustomText(text: widget.phrasesModel.enText,color: Colors.white, fontSize: 17,maxLines: 1, overflow: TextOverflow.ellipsis,)
              
                ],
              ),
@@ -44,8 +45,8 @@ class _CustomPhrasesContainerState extends State<CustomPhrasesContainer> {
         player.audioCache = AudioCache(prefix: 'assets/sounds/phrases/');
         await player.play(AssetSource(widget.phrasesModel.sound));
             }
-            catch(e){print(e);}},icon:
-              Icon(Icons.play_arrow,size: 30,color:  Colors.white))
+            catch(e){ print(e);}},
+            icon:const Icon(Icons.play_arrow,size: 30,color:  Colors.white))
            ],
          ),
        ),

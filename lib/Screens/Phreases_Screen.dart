@@ -1,20 +1,20 @@
 import 'package:flutter/material.dart';
-import 'package:toku/Models/Phrases_Model.dart';
+import 'package:toku/Models/Item_Model.dart';
 import 'package:toku/Widgets/Custom_Phrases_Container.dart';
 import 'package:toku/Widgets/Custom_Text.dart';
 
 class PhreasesScreen extends StatelessWidget {
    PhreasesScreen({super.key});
-  List<PhrasesModel>phrases=[
-    PhrasesModel(text1: 'Don\'t Forget to Subscribe' , text2:'Kodoku suru koto o wasurenaide kudasai', sound:'dont_forget_to_subscribe.wav'),
-    PhrasesModel(text1: 'I love Programming' , text2:'Watashi wa puroguramingu daisukidesu', sound:'i_love_programming.wav'),
-    PhrasesModel(text1: 'Programming is Easy', text2:'puroguramingu wa kantandesu', sound:'programming_is_easy.wav'),
-    PhrasesModel(text1: 'Where are you going? ', text2: 'doko ni iku no ?', sound:'where_are_you_going.wav' ),
-    PhrasesModel(text1: 'What is your Name?', text2:'Namae wa nandesu ka ?', sound:'what_is_your_name.wav'),
-    PhrasesModel(text1: 'I love Anime', text2: 'Watashi wa anime ga daisukidesu', sound: 'i_love_anime.wav'),
-    PhrasesModel(text1: "How are you feeling ?", text2: 'Go kibun wa ikagadesu ka ?', sound:'how_are_you_feeling.wav'),
-    PhrasesModel(text1: 'Are you coming ?', text2:'Kimasu ka ?', sound: 'are_you_coming.wav'),
-    PhrasesModel(text1: 'Yes i\'m coming', text2:'Hai, ikimasu', sound: 'yes_im_coming.wav')
+  List<ItemModel>phrases=[
+    ItemModel(enText: 'Don\'t Forget to Subscribe' ,  jpText:'Kodoku suru koto o wasurenaide kudasai', sound:'dont_forget_to_subscribe.wav'),
+    ItemModel(enText: 'I love Programming' , jpText:'Watashi wa puroguramingu daisukidesu', sound:'i_love_programming.wav'),
+    ItemModel(enText: 'Programming is Easy', jpText:'puroguramingu wa kantandesu', sound:'programming_is_easy.wav'),
+    ItemModel(enText: 'Where are you going? ',  jpText: 'doko ni iku no ?', sound:'where_are_you_going.wav' ),
+    ItemModel(enText: 'What is your Name?', jpText:'Namae wa nandesu ka ?', sound:'what_is_your_name.wav'),
+    ItemModel(enText: 'I love Anime', jpText: 'Watashi wa anime ga daisukidesu', sound: 'i_love_anime.wav'),
+    ItemModel(enText: "How are you feeling ?",  jpText: 'Go kibun wa ikagadesu ka ?', sound:'how_are_you_feeling.wav'),
+    ItemModel(enText: 'Are you coming ?', jpText:'Kimasu ka ?', sound: 'are_you_coming.wav'),
+    ItemModel(enText: 'Yes i\'m coming',  jpText:'Hai, ikimasu', sound: 'yes_im_coming.wav')
 
   ];
 
