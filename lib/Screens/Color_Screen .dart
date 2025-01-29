@@ -24,14 +24,16 @@ class ColorScreen  extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: const Color(0xff46322B), 
-        iconTheme: IconThemeData(color:Colors.white),
+        iconTheme:const IconThemeData(color:Colors.white),
         title: CustomText(text: 'Colors Screen',color: Colors.white,),
       ),
       body: ListView.builder(
         itemCount: colorList.length,
         itemBuilder: (context,index){
           
-          return CustomItemContainer(itemModel: colorList[index],color:Color(0xff7D40A2),
+          return CustomItemContainer(
+            itemModel: colorList[index],
+            color:const Color(0xff7D40A2),
           string: 'colors');
           
         }),

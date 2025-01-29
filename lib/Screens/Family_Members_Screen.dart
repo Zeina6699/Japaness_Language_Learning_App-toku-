@@ -30,7 +30,10 @@ class FamilyMembersScreen extends StatelessWidget {
       body:ListView.builder(
         itemCount:familyList.length ,
         itemBuilder: (context,index){
-     return CustomItemContainer(itemModel:familyList[index],color:Color(0xff527D31) ,string:'family_members' , );
+     return CustomItemContainer(
+      itemModel:familyList[index],
+      color:const Color(0xff527D31) ,
+      string:'family_members' , );
       //CustomFamilyMembersContainer(context),
    } ));
   }

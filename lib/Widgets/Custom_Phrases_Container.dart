@@ -38,7 +38,7 @@ class _CustomPhrasesContainerState extends State<CustomPhrasesContainer> {
              
                ],
              ),
-             Spacer(),
+           const  Spacer(),
              IconButton( onPressed: ()async{
               try{
            final player = AudioPlayer();

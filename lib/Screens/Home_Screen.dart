@@ -19,8 +19,8 @@ body:Column(
   children: [
     CustomContainer(color:const Color(0xffEF9235),onTap:(){Navigator.pushNamed(context,'/numbers');} ,text:'Numbers' ),
     CustomContainer(color:const  Color(0xff527D31), text:'Family Members',onTap:(){Navigator.pushNamed(context, '/family');},),
-    CustomContainer(color: Color(0xff7D40A2), text: 'Colors',onTap: (){Navigator.pushNamed(context,'/colors');},),
-    CustomContainer(color:Color(0xff51B0D5), text:"Phrases",onTap: (){Navigator.pushNamed(context,'/phrases');},)
+    CustomContainer(color:const Color(0xff7D40A2), text: 'Colors',onTap: (){Navigator.pushNamed(context,'/colors');},),
+    CustomContainer(color:const Color(0xff51B0D5), text:"Phrases",onTap: (){Navigator.pushNamed(context,'/phrases');},)
 
   ],
 )
